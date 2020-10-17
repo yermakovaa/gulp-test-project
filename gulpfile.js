@@ -116,7 +116,6 @@ gulp.task(
   gulp.parallel('prebuild', 'clear', 'img', 'sass', 'scripts'),
 );
 
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*').pipe(ghPages());
 });
